@@ -1,16 +1,46 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<div class="container">
+    <h2 class="text-center">Cards Gallery</h2>
+    <div class="row">
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <a data-toggle="modal" data-target="#myModal">
+                    <img src="Image1.jpg" class="card-img-top" alt="Image 1">
+                </a>
+                <div class="card-body text-center">
+                    <h6 class="card-title">Card 1</h6>
+                    <p class="card-text">Description for Card 1</p>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat the above card structure for other images -->
+
+        <!-- Modal for lightbox effect -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Image Preview</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="Image1.jpg" class="img-fluid" alt="Image 1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
-
 </html>
